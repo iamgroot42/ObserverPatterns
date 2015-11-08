@@ -9,7 +9,7 @@ public class SerializeTemperature implements Observer {
 	public void update(TemperatureLog Delhi, TemperatureLog Kolkata, TemperatureLog Mumbai) {
 		try {
 			f = new ObjectOutputStream(new FileOutputStream("SerializeTemp.dat"));
-			/* Need to make changes to append at the end*/
+			/*Need to make changes to append at the end*/
 			f.writeObject(Delhi);
 			f.writeObject(Kolkata);
 			f.writeObject(Mumbai);

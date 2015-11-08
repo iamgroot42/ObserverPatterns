@@ -1,13 +1,11 @@
 package com.iiitd.ap.lab10;
 
 import java.io.Serializable;
-import java.util.Random;
 
-public class TemperatureLog implements Serializable, Runnable {
+public class TemperatureLog implements Serializable {
 	private static final long serialVersionUID = 1L;
 	private Double temperature;
 	private String Location;
-	Random rand = new Random();
 	public TemperatureLog(Double temperature, String Location) {
 		this.temperature = temperature;
 		this.Location = Location;
@@ -23,14 +21,5 @@ public class TemperatureLog implements Serializable, Runnable {
 	}
 	public void setLocation(String location) {
 		Location = location;
-	}
-	public void run() {
-		while(true)
-		{
-			temperature = rand.nextDouble() * 50;
-			try { 
-				Thread.sleep(5000);
-			} catch(InterruptedException ex) {System.out.println("Interrupted");}
-		}
 	}
 }
