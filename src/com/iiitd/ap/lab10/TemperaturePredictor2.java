@@ -6,8 +6,8 @@ public class TemperaturePredictor2 implements Observer {
 	double meanDelhi,meanKolkata,meanMumbai;
 	int n;
 	public TemperaturePredictor2() {
-		meanDelhi=meanKolkata=meanMumbai=0;
-		n=0;
+		meanDelhi=meanKolkata=meanMumbai=35.0;
+		n=1;
 	}
 	public double CalcAvg(String arre) {
 		Random rand = new Random();
@@ -24,7 +24,7 @@ public class TemperaturePredictor2 implements Observer {
 	}
 	public void update(TemperatureLog Delhi, TemperatureLog Kolkata, TemperatureLog Mumbai) {
 		System.out.println("--------------------------------------------------");
-		System.out.println("Temprature Prediction by Temprature Predictor 1 : ");
+		System.out.println("Temprature Prediction by Temprature Predictor 2 : ");
 		System.out.println("Delhi : " + CalcAvg("Delhi"));
 		System.out.println("Kolkata : " + CalcAvg("Kolkata"));
 		System.out.println("Mumbai : " + CalcAvg("Mumbai"));

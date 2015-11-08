@@ -7,6 +7,7 @@ public class Main {
 		ConcreteSubject sensor = new ConcreteSubject();
 		sensor.register(new SerializeTemperature());
 		sensor.register(new TemperaturePredictor1());
+		sensor.register(new TemperaturePredictor2());
 		sensor.register(new GenerateStats());
 		(Tsensor = new Thread(sensor)).start();
 		(Tdelhi = new Thread(new LogUpdater(sensor, "Delhi"))).start();
