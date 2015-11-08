@@ -10,11 +10,10 @@ public class TemperaturePredictor2 implements Observer {
 		n=1;
 	}
 	public double CalcAvg(String arre) {
-		Random rand = new Random();
 		double c,mean,ret,sign;
 		mean=0;
-		if(rand.nextBoolean()) sign=1; else sign=-1;
-		c=(rand.nextDouble() * (n+1) * sign)/(10.0); //Assumption : +-10% variation from mean
+		if(RandomGen.getBoolean()) sign=1; else sign=-1;
+		c=(RandomGen.getDouble() * (n+1) * sign)/(20.0); //Assumption : +-5% variation from mean
 		if(arre.equals("Delhi")) mean=meanDelhi;
 		else if(arre.equals("Kolkata")) mean=meanKolkata;
 		else if(arre.equals("Mumbai")) mean=meanMumbai;

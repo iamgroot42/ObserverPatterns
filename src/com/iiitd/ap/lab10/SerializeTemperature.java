@@ -10,9 +10,9 @@ public class SerializeTemperature implements Observer {
 		try {
 			f = new BufferedWriter(new FileWriter("SerializeTemp.txt",true));
 			/*Need to make changes to append at the end*/
-			f.write(Delhi.getLocation()+" : "+Delhi.getTemperature());
-			f.write(Kolkata.getLocation()+" : "+Kolkata.getTemperature());
-			f.write(Mumbai.getLocation()+" : "+Mumbai.getTemperature());
+			f.write(Delhi.getLocation()+" : "+Delhi.getTemperature()+"\n");
+			f.write(Kolkata.getLocation()+" : "+Kolkata.getTemperature()+"\n");
+			f.write(Mumbai.getLocation()+" : "+Mumbai.getTemperature()+"\n");
 		} catch(IOException ex) {
 			System.out.println("Something wrong with writing file\n");
 		} finally {
