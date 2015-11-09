@@ -9,7 +9,7 @@ class RandomGen {
 	 static long current;
 	 static
 	 {
-		current=42; 
+		current=System.currentTimeMillis() % 1019 + 7; 
 	 }
 	 public static double getDouble()
 	 {

@@ -1,7 +1,5 @@
 package com.iiitd.ap.lab10;
 
-import java.util.Random;
-
 public class TemperaturePredictor2 implements Observer {
 	double meanDelhi,meanKolkata,meanMumbai;
 	int n;
@@ -11,9 +9,9 @@ public class TemperaturePredictor2 implements Observer {
 	}
 	public double CalcAvg(String arre) {
 		double c,mean,ret,sign;
-		mean=0;
+		mean=35;
 		if(RandomGen.getBoolean()) sign=1; else sign=-1;
-		c=(RandomGen.getDouble() * (n+1) * sign)/(20.0); //Assumption : +-5% variation from mean
+		c=(RandomGen.getDouble() * (n+1) * sign * mean)/(100.0); //Assumption : +-1% variation from mean
 		if(arre.equals("Delhi")) mean=meanDelhi;
 		else if(arre.equals("Kolkata")) mean=meanKolkata;
 		else if(arre.equals("Mumbai")) mean=meanMumbai;
@@ -22,6 +20,9 @@ public class TemperaturePredictor2 implements Observer {
 		return ret;
 	}
 	public void update(TemperatureLog Delhi, TemperatureLog Kolkata, TemperatureLog Mumbai) {
+		meanDelhi=(Delhi.getTemperature()+(n*meanDelhi))/(n+1);
+		meanKolkata=(Kolkata.getTemperature()+(n*meanKolkata))/(n+1);
+		meanMumbai=(Mumbai.getTemperature()+(n*meanMumbai))/(n+1);
 		System.out.println("--------------------------------------------------");
 		System.out.println("Temprature Prediction by Temprature Predictor 2 : ");
 		System.out.println("Delhi : " + CalcAvg("Delhi"));

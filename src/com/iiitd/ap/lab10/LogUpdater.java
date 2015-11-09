@@ -1,7 +1,5 @@
 package com.iiitd.ap.lab10;
 
-import java.util.Random;
-
 public class LogUpdater implements Runnable {
 	ConcreteSubject sensor;
 	String Location;

@@ -32,13 +32,16 @@ public class GenerateStats implements Observer {
 		int i,n=x.size();
 		i=0;
 		Iterator<Double> iterator;
+		Double ret=null;
 		iterator = x.iterator();
 		while(iterator.hasNext())
 		{
 			if(i>=n/2) break;
 			i++;
+			ret=iterator.next();
 		}
-		return (double)iterator.next();
+		if(ret==null) ret=iterator.next();
+		return ret;
 	}
 	public void update(TemperatureLog Delhi, TemperatureLog Kolkata, TemperatureLog Mumbai) {
 		LogsDelhi.add(Delhi.getTemperature());
