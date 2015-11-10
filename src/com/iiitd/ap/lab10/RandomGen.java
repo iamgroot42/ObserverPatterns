@@ -1,3 +1,6 @@
+//@author : Anshuman Suri - 2014021
+//@author : Satyam Kumar - 2014096
+
 package com.iiitd.ap.lab10;
 
 // A LCG (Linear Congruential Generator) with :

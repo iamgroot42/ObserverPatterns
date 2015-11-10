@@ -1,3 +1,6 @@
+//@author : Anshuman Suri - 2014021
+//@author : Satyam Kumar - 2014096
+
 package com.iiitd.ap.lab10;
 
 public class TemperaturePredictor2 implements Observer {
@@ -9,12 +12,12 @@ public class TemperaturePredictor2 implements Observer {
 	}
 	public double CalcAvg(String arre) {
 		double c,mean,ret,sign;
-		mean=35;
-		if(RandomGen.getBoolean()) sign=1; else sign=-1;
-		c=(RandomGen.getDouble() * (n+1) * sign * mean)/(100.0); //Assumption : +-1% variation from mean
+		mean=35.0;
 		if(arre.equals("Delhi")) mean=meanDelhi;
 		else if(arre.equals("Kolkata")) mean=meanKolkata;
 		else if(arre.equals("Mumbai")) mean=meanMumbai;
+		if(RandomGen.getBoolean()) sign=1; else sign=-1;
+		c=(RandomGen.getDouble() * (n+1) * sign * mean)/(100.0); //Assumption : +-1% variation from mean
 		if(mean+c>0) ret=mean+c;
 		else ret=mean;
 		return ret;

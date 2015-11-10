@@ -1,3 +1,6 @@
+//@author : Satyam Kumar - 2014096
+//@author : Anshuman Suri - 2014021
+
 package com.iiitd.ap.lab10;
 
 public class Main {
@@ -8,6 +11,7 @@ public class Main {
 		sensor.register(new SerializeTemperature());
 		sensor.register(new TemperaturePredictor1());
 		sensor.register(new TemperaturePredictor2());
+		sensor.register(new TemperaturePredictor3());
 		sensor.register(new GenerateStats());
 		(Tsensor = new Thread(sensor)).start();
 		(Tdelhi = new Thread(new LogUpdater(sensor, "Delhi"))).start();

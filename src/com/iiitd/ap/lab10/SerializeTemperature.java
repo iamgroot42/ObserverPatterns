@@ -1,3 +1,6 @@
+//@author : Satyam Kumar - 2014096
+//@author : Anshuman Suri - 2014021
+
 package com.iiitd.ap.lab10;
 
 import java.io.BufferedWriter;
@@ -13,6 +16,7 @@ public class SerializeTemperature implements Observer {
 			f.write(Delhi.getLocation()+" : "+Delhi.getTemperature()+"\n");
 			f.write(Kolkata.getLocation()+" : "+Kolkata.getTemperature()+"\n");
 			f.write(Mumbai.getLocation()+" : "+Mumbai.getTemperature()+"\n");
+			f.write("\n");
 		} catch(IOException ex) {
 			System.out.println("Something wrong with writing file\n");
 		} finally {
