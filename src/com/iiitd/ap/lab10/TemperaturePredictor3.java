@@ -14,14 +14,14 @@ public class TemperaturePredictor3 implements Observer{
 		readDelhi=new ArrayList<Double>();
 		readKolkata=new ArrayList<Double>();
 		readMumbai=new ArrayList<Double>();
-		n=1;
+		n=0;
 	}
 	public double CalcAvg(String arre) {
 		double ret,sum;
 		ret=35.0;
 		int i,j;
 		sum=0;
-		if(n<2) return ret;
+		if(n<1) return ret;
 		if(arre.equals("Delhi"))
 		{
 			for(i=n-1,j=1;i>0;i--,j++)
@@ -52,6 +52,8 @@ public class TemperaturePredictor3 implements Observer{
 		readDelhi.add(Delhi.getTemperature());
 		readKolkata.add(Kolkata.getTemperature());
 		readMumbai.add(Mumbai.getTemperature());
+		n++;
+		//System.out.println("length : " + readDelhi.size() + " " + readMumbai.size());
 		System.out.println("--------------------------------------------------");
 		System.out.println("Temprature Prediction by Temprature Predictor 3 : ");
 		System.out.println("Delhi : " + CalcAvg("Delhi"));
