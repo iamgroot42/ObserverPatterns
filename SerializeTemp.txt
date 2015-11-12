@@ -250,3 +250,303 @@ Delhi : 4.02323625
 Kolkata : 9.8057557
 Mumbai : 24.7651333
 
+Delhi : 35.0
+Kolkata : 35.0
+Mumbai : 35.0
+
+Delhi : 35.0
+Kolkata : 35.0
+Mumbai : 35.0
+
+Delhi : 33.9820724
+Kolkata : 33.9820724
+Mumbai : 3.4890539499999997
+
+Delhi : 2.39283445
+Kolkata : 24.2226775
+Mumbai : 0.9478120499999999
+
+Delhi : 22.67626035
+Kolkata : 0.7300468
+Mumbai : 3.0088804000000002
+
+Delhi : 43.3255959
+Kolkata : 43.13828245
+Mumbai : 37.3315655
+
+Delhi : 13.27108275
+Kolkata : 11.4483748
+Mumbai : 13.27108275
+
+Delhi : 22.94052885
+Kolkata : 11.2012039
+Mumbai : 47.28213045
+
+Delhi : 3.7491707499999998
+Kolkata : 4.9582052
+Mumbai : 32.41656115
+
+Delhi : 13.4032119
+Kolkata : 28.732538299999998
+Mumbai : 40.75349685
+
+Delhi : 45.8352532
+Kolkata : 30.509369149999998
+Mumbai : 42.9182116
+
+Delhi : 2.1140663
+Kolkata : 14.58287925
+Mumbai : 15.580864850000001
+
+Delhi : 38.472379600000004
+Kolkata : 33.49766355
+Mumbai : 33.49766355
+
+Delhi : 36.1579943
+Kolkata : 45.6136567
+Mumbai : 14.06816725
+
+Delhi : 37.521922
+Kolkata : 28.62829395
+Mumbai : 28.62829395
+
+Delhi : 29.838920400000003
+Kolkata : 25.05134195
+Mumbai : 0.9611003499999999
+
+Delhi : 35.0
+Kolkata : 35.0
+Mumbai : 35.0
+
+Delhi : 14.89902455
+Kolkata : 14.89902455
+Mumbai : 11.914570600000001
+
+Delhi : 27.98549495
+Kolkata : 27.98549495
+Mumbai : 17.595153
+
+Delhi : 35.0
+Kolkata : 35.0
+Mumbai : 35.0
+
+Delhi : 19.060980999999998
+Kolkata : 19.060980999999998
+Mumbai : 40.935220550000004
+
+Delhi : 35.19993095
+Kolkata : 2.7469394
+Mumbai : 41.242669
+
+Delhi : 15.327347399999999
+Kolkata : 16.62201735
+Mumbai : 25.192578949999998
+
+Delhi : 49.35578535
+Kolkata : 24.1713218
+Mumbai : 30.074155400000002
+
+Delhi : 9.74395335
+Kolkata : 46.36660775
+Mumbai : 37.4096498
+
+Delhi : 27.76469575
+Kolkata : 46.0554802
+Mumbai : 46.0554802
+
+Delhi : 20.78089415
+Kolkata : 40.9914866
+Mumbai : 40.9914866
+
+Delhi : 42.407109
+Kolkata : 14.66518855
+Mumbai : 14.66518855
+
+Delhi : 4.931197
+Kolkata : 46.93181895
+Mumbai : 3.1253874
+
+Delhi : 40.67486695
+Kolkata : 25.5041954
+Mumbai : 28.24062535
+
+Delhi : 23.5372898
+Kolkata : 23.5372898
+Mumbai : 23.5372898
+
+Delhi : 48.09612615
+Kolkata : 48.09612615
+Mumbai : 41.0247202
+
+Delhi : 24.3063266
+Kolkata : 36.26650055
+Mumbai : 3.5409341499999996
+
+Delhi : 23.32282855
+Kolkata : 23.331549
+Mumbai : 23.0524946
+
+Delhi : 37.63105895
+Kolkata : 16.607637
+Mumbai : 14.881556549999999
+
+Delhi : 43.0942354
+Kolkata : 35.96610695
+Mumbai : 14.994125
+
+Delhi : 19.01763335
+Kolkata : 39.591443399999996
+Mumbai : 27.379554950000003
+
+Delhi : 32.1896578
+Kolkata : 32.1896578
+Mumbai : 47.924201350000004
+
+Delhi : 32.3350082
+Kolkata : 25.3767858
+Mumbai : 2.43006375
+
+Delhi : 35.0
+Kolkata : 35.0
+Mumbai : 35.0
+
+Delhi : 32.1562964
+Kolkata : 32.1562964
+Mumbai : 46.88999795
+
+Delhi : 1.42056435
+Kolkata : 25.8508308
+Mumbai : 44.0823044
+
+Delhi : 41.05193235
+Kolkata : 42.757146750000004
+Mumbai : 25.5163588
+
+Delhi : 18.80643475
+Kolkata : 18.3471492
+Mumbai : 33.0442868
+
+Delhi : 19.499397199999997
+Kolkata : 13.530793150000001
+Mumbai : 19.499397199999997
+
+Delhi : 1.6878836000000002
+Kolkata : 22.63364755
+Mumbai : 2.36920115
+
+Delhi : 33.5396516
+Kolkata : 3.207186
+Mumbai : 49.46757555
+
+Delhi : 0.10348595
+Kolkata : 0.10348595
+Mumbai : 0.10348595
+
+Delhi : 25.62477235
+Kolkata : 20.1799988
+Mumbai : 44.4127524
+
+Delhi : 35.0
+Kolkata : 35.0
+Mumbai : 35.0
+
+Delhi : 39.268319
+Kolkata : 17.36269855
+Mumbai : 38.2884646
+
+Delhi : 36.560407
+Kolkata : 4.40372895
+Mumbai : 33.41742655
+
+Delhi : 7.474776950000001
+Kolkata : 14.7558054
+Mumbai : 31.762895
+
+Delhi : 49.1090134
+Kolkata : 45.131103350000004
+Mumbai : 22.42422495
+
+Delhi : 35.41367135
+Kolkata : 49.528027800000004
+Mumbai : 47.8686214
+
+Delhi : 36.0111558
+Kolkata : 15.67633375
+Mumbai : 16.39063935
+
+Delhi : 32.4366838
+Kolkata : 31.0416262
+Mumbai : 12.33522175
+
+Delhi : 47.2354742
+Kolkata : 41.84486015
+Mumbai : 14.34450975
+
+Delhi : 25.146840599999997
+Kolkata : 29.59686815
+Mumbai : 25.146840599999997
+
+Delhi : 4.024208600000001
+Kolkata : 17.016223
+Mumbai : 27.547722549999996
+
+Delhi : 29.141650549999998
+Kolkata : 25.887312950000002
+Mumbai : 2.551511
+
+Delhi : 2.14556095
+Kolkata : 16.557199
+Mumbai : 1.6806694
+
+Delhi : 7.95484735
+Kolkata : 7.95484735
+Mumbai : 46.6450774
+
+Delhi : 45.84694975
+Kolkata : 10.352615349999999
+Mumbai : 21.3002518
+
+Delhi : 26.0849622
+Kolkata : 19.082579799999998
+Mumbai : 8.67863775
+
+Delhi : 41.683316149999996
+Kolkata : 42.2276102
+Mumbai : 41.683316149999996
+
+Delhi : 1.7108166
+Kolkata : 3.08012415
+Mumbai : 24.24729055
+
+Delhi : 35.0
+Kolkata : 35.0
+Mumbai : 35.0
+
+Delhi : 14.841639
+Kolkata : 14.841639
+Mumbai : 14.841639
+
+Delhi : 26.924010250000002
+Kolkata : 34.6891273
+Mumbai : 25.40775585
+
+Delhi : 39.472557699999996
+Kolkata : 39.472557699999996
+Mumbai : 23.69409825
+
+Delhi : 22.290164100000002
+Kolkata : 41.03989665
+Mumbai : 22.2816057
+
+Delhi : 9.47779105
+Kolkata : 9.59110465
+Mumbai : 43.8563321
+
+Delhi : 45.5874745
+Kolkata : 45.5874745
+Mumbai : 45.5874745
+
+Delhi : 25.472427850000003
+Kolkata : 30.43706945
+Mumbai : 39.690072900000004
+
