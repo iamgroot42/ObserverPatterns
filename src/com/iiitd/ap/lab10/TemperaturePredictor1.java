@@ -4,9 +4,11 @@
 package com.iiitd.ap.lab10;
 
 public class TemperaturePredictor1 implements Observer {
+	String name;
 	Double[] Delhi, Kolkata, Mumbai;
 	int idxDelhi, idxKolkata, idxMumbai;
-	public TemperaturePredictor1() {
+	public TemperaturePredictor1(String name) {
+		this.name = name;
 		Delhi = new Double[5];
 		Kolkata = new Double[5];
 		Mumbai = new Double[5];
@@ -29,10 +31,13 @@ public class TemperaturePredictor1 implements Observer {
 		this.Kolkata[idxKolkata++] = Kolkata.getTemperature(); if(idxKolkata == 5) idxKolkata = 0;
 		this.Mumbai[idxMumbai++] = Mumbai.getTemperature(); if(idxMumbai == 5) idxMumbai = 0;
 		System.out.println("--------------------------------------------------");
-		System.out.println("Temprature Prediction by Temprature Predictor 1 : ");
+		System.out.println("Temprature Prediction by " + name + " (Temprature Predictor 1) : ");
 		System.out.println("Delhi : " + CalcAvg(this.Delhi));
 		System.out.println("Kolkata : " + CalcAvg(this.Kolkata));
 		System.out.println("Mumbai : " + CalcAvg(this.Mumbai));
 		System.out.println("--------------------------------------------------");
+	}
+	public String getName() {
+		return name;
 	}
 }

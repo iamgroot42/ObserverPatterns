@@ -8,7 +8,11 @@ import java.io.FileWriter;
 import java.io.IOException;
 
 public class SerializeTemperature implements Observer {
+	String name;
 	BufferedWriter f;
+	public SerializeTemperature(String name) {
+		this.name = name;
+	}
 	public void update(TemperatureLog Delhi, TemperatureLog Kolkata, TemperatureLog Mumbai) {
 		try {
 			f = new BufferedWriter(new FileWriter("SerializeTemp.txt",true));
@@ -22,5 +26,8 @@ public class SerializeTemperature implements Observer {
 		} finally {
 			try { if(f != null) f.close(); } catch(Exception ex) {System.out.println("Couldn't close file!");}
 		}
+	}
+	public String getName() {
+		return name;
 	}
 }

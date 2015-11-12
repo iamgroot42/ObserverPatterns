@@ -6,10 +6,12 @@ package com.iiitd.ap.lab10;
 import java.util.ArrayList;
 
 public class TemperaturePredictor3 implements Observer{
+	String name;
 	double meanDelhi,meanKolkata,meanMumbai;
 	ArrayList<Double> readDelhi,readKolkata,readMumbai;
 	int n,currMin;
-	public TemperaturePredictor3() {
+	public TemperaturePredictor3(String name) {
+		this.name = name;
 		meanDelhi=meanKolkata=meanMumbai=35.0;
 		readDelhi=new ArrayList<Double>();
 		readKolkata=new ArrayList<Double>();
@@ -58,7 +60,7 @@ public class TemperaturePredictor3 implements Observer{
 		return ret;
 	}
 	public void update(TemperatureLog Delhi, TemperatureLog Kolkata, TemperatureLog Mumbai) {
-		if(n==100)
+		if(n==10)
 		{
 			readDelhi.remove(0);
 			readKolkata.remove(0);
@@ -72,10 +74,13 @@ public class TemperaturePredictor3 implements Observer{
 		readMumbai.add(Mumbai.getTemperature());
 		//System.out.println("length : " + readDelhi.size() + " " + readMumbai.size());
 		System.out.println("--------------------------------------------------");
-		System.out.println("Temprature Prediction by Temprature Predictor 3 : ");
+		System.out.println("Temprature Prediction by " + name + " (Temprature Predictor 3) : ");
 		System.out.println("Delhi : " + CalcAvg("Delhi"));
 		System.out.println("Kolkata : " + CalcAvg("Kolkata"));
 		System.out.println("Mumbai : " + CalcAvg("Mumbai"));
 		System.out.println("--------------------------------------------------");
+	}
+	public String getName() {
+		return name;
 	}
 }

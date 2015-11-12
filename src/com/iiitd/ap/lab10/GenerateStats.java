@@ -14,6 +14,7 @@ class MyCom implements Comparator<TemperatureLog> {
 	}
 }
 public class GenerateStats implements Observer {
+	String name;
 	TreeSet<Double> Delhi;
 	TreeSet<Double> Kolkata;
 	TreeSet<Double> Mumbai;
@@ -21,7 +22,8 @@ public class GenerateStats implements Observer {
 	ArrayDeque<Double> LogsKolkata;
 	ArrayDeque<Double> LogsMumbai;
 	double sumDelhi, sumKolkata, sumMumbai;
-	public GenerateStats() {
+	public GenerateStats(String name) {
+		this.name = name;
 		Delhi = new TreeSet<Double>();
 		Kolkata = new TreeSet<Double>();
 		Mumbai = new TreeSet<Double>();
@@ -75,7 +77,7 @@ public class GenerateStats implements Observer {
 		meanMumbai=this.getMedian(this.Mumbai);
 		/* TreeSet doesn't have methods to get middle element o.O Collections.BinarySearch() is only for keys.*/
 		System.out.println("--------------------------------------------------");
-		System.out.println("Stats are : ");
+		System.out.println("Stats by " + name +" : ");
 		System.out.printf("Delhi - Mean : %f ; Median : %f ; Min : %f ; Max : %f" + System.lineSeparator(), 
 				sumDelhi/LogsDelhi.size(), meanDelhi, this.Delhi.first(), this.Delhi.last());
 		System.out.printf("Kolkata - Mean : %f ; Median : %f ; Min : %f ; Max : %f" + System.lineSeparator(), 
@@ -83,5 +85,8 @@ public class GenerateStats implements Observer {
 		System.out.printf("Mumbai - Mean : %f ; Median : %f ; Min : %f ; Max : %f" + System.lineSeparator(), 
 				sumMumbai/LogsMumbai.size(), meanMumbai, this.Mumbai.first(), this.Mumbai.last());
 		System.out.println("--------------------------------------------------");
+	}
+	public String getName() {
+		return name;
 	}
 }

@@ -550,3 +550,31 @@ Delhi : 25.472427850000003
 Kolkata : 30.43706945
 Mumbai : 39.690072900000004
 
+Delhi : 35.0
+Kolkata : 35.0
+Mumbai : 35.0
+
+Delhi : 45.791216299999995
+Kolkata : 19.57251485
+Mumbai : 6.7927699
+
+Delhi : 15.43581725
+Kolkata : 35.25428285
+Mumbai : 28.555144300000002
+
+Delhi : 24.0150547
+Kolkata : 24.0150547
+Mumbai : 44.51150525
+
+Delhi : 35.0
+Kolkata : 35.0
+Mumbai : 35.0
+
+Delhi : 46.3803416
+Kolkata : 37.83539915
+Mumbai : 22.9421832
+
+Delhi : 7.38689355
+Kolkata : 29.0385096
+Mumbai : 0.23860715000000002
+

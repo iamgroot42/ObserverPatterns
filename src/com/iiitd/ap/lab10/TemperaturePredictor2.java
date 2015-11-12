@@ -4,9 +4,11 @@
 package com.iiitd.ap.lab10;
 
 public class TemperaturePredictor2 implements Observer {
+	String name;
 	double meanDelhi,meanKolkata,meanMumbai;
 	int n;
-	public TemperaturePredictor2() {
+	public TemperaturePredictor2(String name) {
+		this.name = name;
 		meanDelhi=meanKolkata=meanMumbai=35.0;
 		n=1;
 	}
@@ -27,10 +29,13 @@ public class TemperaturePredictor2 implements Observer {
 		meanKolkata=(Kolkata.getTemperature()+(n*meanKolkata))/(n+1);
 		meanMumbai=(Mumbai.getTemperature()+(n*meanMumbai))/(n+1);
 		System.out.println("--------------------------------------------------");
-		System.out.println("Temprature Prediction by Temprature Predictor 2 : ");
+		System.out.println("Temprature Prediction by " + name + " (Temprature Predictor 2) : ");
 		System.out.println("Delhi : " + CalcAvg("Delhi"));
 		System.out.println("Kolkata : " + CalcAvg("Kolkata"));
 		System.out.println("Mumbai : " + CalcAvg("Mumbai"));
 		System.out.println("--------------------------------------------------");
+	}
+	public String getName() {
+		return name;
 	}
 }
