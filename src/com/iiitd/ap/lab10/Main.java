@@ -11,7 +11,6 @@ public class Main {
 		sensor.register(new SerializeTemperature("WeatherLog"));
 		sensor.register(new TemperaturePredictor1("BBC"));
 		sensor.register(new TemperaturePredictor2("Yahooweather"));
-		sensor.register(new TemperaturePredictor3("PotatoServices"));
 		sensor.register(new GenerateStats("GoogleWeatherStats"));
 		(Tsensor = new Thread(sensor)).start();
 		(Tdelhi = new Thread(new LogUpdater(sensor, "Delhi"))).start();

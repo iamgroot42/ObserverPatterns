@@ -3,31 +3,76 @@
 
 package com.iiitd.ap.lab10;
 
-public class TemperaturePredictor2 implements Observer {
+import java.util.ArrayList;
+
+public class TemperaturePredictor2 implements Observer{
 	String name;
 	double meanDelhi,meanKolkata,meanMumbai;
-	int n;
+	ArrayList<Double> readDelhi,readKolkata,readMumbai;
+	int n,currMin;
 	public TemperaturePredictor2(String name) {
 		this.name = name;
 		meanDelhi=meanKolkata=meanMumbai=35.0;
-		n=1;
+		readDelhi=new ArrayList<Double>();
+		readKolkata=new ArrayList<Double>();
+		readMumbai=new ArrayList<Double>();
+		n=0;
+		currMin=1;
 	}
 	public double CalcAvg(String arre) {
-		double c,mean,ret,sign;
-		mean=35.0;
-		if(arre.equals("Delhi")) mean=meanDelhi;
-		else if(arre.equals("Kolkata")) mean=meanKolkata;
-		else if(arre.equals("Mumbai")) mean=meanMumbai;
-		if(RandomGen.getBoolean()) sign=1; else sign=-1;
-		c=(RandomGen.getDouble() * (n+1) * sign * mean)/(100.0); //Assumption : +-1% variation from mean
-		if(mean+c>0) ret=mean+c;
-		else ret=mean;
+		double ret,sum;
+		ret=35.0;
+		int i,j;
+		sum=0;
+		int nor=1;
+		if(n<1) return ret;
+		if(arre.equals("Delhi"))
+		{
+			for(i=n-1,j=currMin;i>0;i--,j++)
+			{
+				sum+=(readDelhi.get(i)-readDelhi.get(i-1))/j;
+				nor++;
+			}
+			sum/=nor;
+			ret=readDelhi.get(n-1)+sum;
+		}
+		else if(arre.equals("Kolkata"))
+		{
+			for(i=n-1,j=currMin;i>0;i--,j++)
+			{
+				sum+=(readKolkata.get(i)-readKolkata.get(i-1))/i;
+				nor++;
+			}
+			sum/=nor;
+			ret=readKolkata.get(n-1)+sum;
+		}
+		else if(arre.equals("Mumbai"))
+		{
+			for(i=n-1,j=currMin;i>0;i--,j++)
+			{
+				sum+=(readMumbai.get(i)-readMumbai.get(i-1))/i;
+				nor++;
+			}
+			sum/=nor;
+			ret=readMumbai.get(n-1)+sum;
+		}
+		if(ret<0) ret=0;
 		return ret;
 	}
 	public void update(TemperatureLog Delhi, TemperatureLog Kolkata, TemperatureLog Mumbai) {
-		meanDelhi=(Delhi.getTemperature()+(n*meanDelhi))/(n+1);
-		meanKolkata=(Kolkata.getTemperature()+(n*meanKolkata))/(n+1);
-		meanMumbai=(Mumbai.getTemperature()+(n*meanMumbai))/(n+1);
+		if(n==10)
+		{
+			readDelhi.remove(0);
+			readKolkata.remove(0);
+			readMumbai.remove(0);
+			currMin++;
+			n--;
+		}
+		n++;
+		readDelhi.add(Delhi.getTemperature());
+		readKolkata.add(Kolkata.getTemperature());
+		readMumbai.add(Mumbai.getTemperature());
+		//System.out.println("length : " + readDelhi.size() + " " + readMumbai.size());
 		System.out.println("--------------------------------------------------");
 		System.out.println("Temprature Prediction by " + name + " (Temprature Predictor 2) : ");
 		System.out.println("Delhi : " + CalcAvg("Delhi"));
